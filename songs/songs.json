@@ -1,0 +1,54 @@
+[
+    {
+        "folder": "Chill Station",
+        "title": "Chill Station",
+        "description": "Soft chill for the dreamy",
+        "cover": "/songs/Chill Station/cover.jpeg",
+        "songs": [
+            {
+                "title": "Ahista Ahista",
+                "url": "/songs/Chill Station/Ahista Ahista.mp3"
+            },
+            {
+                "title": "Bol Do Na Zara",
+                "url": "/songs/Chill Station/Bol Do Na Zara.mp3"
+            },
+            {
+                "title": "Der Lagi Lekin - Zindagi Na Milegi Dobara",
+                "url": "/songs/Chill Station/Der Lagi Lekin - Zindagi Na Milegi Dobara.mp3"
+            },
+            {
+                "title": "Noor E Khuda - My Name Is Khan",
+                "url": "/songs/Chill Station/Noor E Khuda - My Name Is Khan.mp3"
+            }
+        ]
+    },
+    {
+        "folder": "ncs",
+        "title": "Happy Hits!",
+        "description": "Hits to boost your mood & fill you with happiness!",
+        "cover": "/songs/ncs/cover.jpeg",
+        "songs": [
+            {
+                "title": "Ed Sheeran & Justin Bieber - I Don't Care",
+                "url": "/songs/ncs/Ed Sheeran & Justin Bieber - I Don't Care.mp3"
+            },
+            {
+                "title": "Jalebi Baby Tendencia",
+                "url": "/songs/ncs/Jalebi Baby Tendencia.mp3"
+            },
+            {
+                "title": "My-Stupid-Heart",
+                "url": "/songs/ncs/My-Stupid-Heart.mp3"
+            },
+            {
+                "title": "Senorita - Zindagi Na Milegi Dobara",
+                "url": "/songs/ncs/Senorita - Zindagi Na Milegi Dobara.mp3"
+            },
+            {
+                "title": "Uptown-Funk",
+                "url": "/songs/ncs/Uptown-Funk.mp3"
+            }
+        ]
+    }
+]
