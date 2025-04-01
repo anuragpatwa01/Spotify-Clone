@@ -297,14 +297,18 @@ p {
 
 .seekbar {
     height: 1.5px;
-    width: 35%;
+    width: 200%;
     flex-grow: 1;
+    max-width: none;
     margin: 0 10px;
+    display: flex;
+    justify-content: center;
     border: 2px solid transparent;
     border-radius: 10px;
     position: relative;
     background-color: #575757;
     cursor: pointer;
+    right: 10px;
 }
 
 .circle {
@@ -321,13 +325,17 @@ p {
 }
 
 .songinfo {
-    width: 200px;
-    /* Adjusted for better visibility */
+    width: 15%;
+    min-width: 200px;
+    max-width: 200px;
+    color: white;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    display: block;
     text-align: left;
-    margin-right: 20px;
+    margin-right: 10px;
+
 
 }
 
@@ -366,14 +374,9 @@ p {
     opacity: 1;
 }
 
-.songinfo {
-    display: flex;
-    gap: 22px;
-    align-items: center
-}
 
 .vol {
-    cursor: pointer ;
+    cursor: pointer;
     position: absolute;
     display: flex;
     align-items: center;
@@ -421,7 +424,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* Ensures songinfo on left, seekbar center, songtime right */
+    /* Ensures  on left, seekbar center, songtime right */
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
@@ -515,7 +518,8 @@ p {
         width: 30px;
         opacity: 0.8;
     }
-    .hamburger img:hover{
+
+    .hamburger img:hover {
         cursor: pointer;
         opacity: 1;
     }
@@ -568,12 +572,14 @@ p {
         align-items: center;
 
     }
+
     .card:hover .play {
         bottom: 130px;
         right: 30px;
         opacity: 1;
     }
-    .play{
+
+    .play {
         width: 41px;
         height: 43px;
     }
@@ -654,21 +660,25 @@ p {
     }
 
     .songinfo {
-        width: 100%;
+        width:150px;
+        min-width: 180px;
+        max-width: 250px;
+        color: white;
+        display: block;
         text-align: center;
+        width: 100%;
+        position: absolute;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        font-size: 14px;
-        max-width: 250px;
-        position: absolute;
         top: -65px;
+
 
     }
 
     .seekbar {
         width: 100%;
-        max-width: 350px;
+        max-width: 300px;
         height: 1.5px;
         background-color: #404040;
         border-radius: 2px;
@@ -744,7 +754,7 @@ p {
         left: 0;
         bottom: 0;
         position: fixed;
-        height: 70px;
+        height: 90px;
         /* Consistent height */
         padding: 10px;
         box-sizing: border-box;
@@ -819,7 +829,7 @@ p {
     bottom: 0;
     left: 0;
     z-index: 1000;
-    background-color: #181818;
+    background-color: #000000;
 }
 
 /* Ensure content doesn't get hidden behind the playbar */
@@ -853,6 +863,7 @@ body {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    width: 100%;
 }
 
 @media (min-width: 600px) and (max-width: 768px) {
@@ -891,7 +902,7 @@ body {
 }
 
 @media (min-width: 1365px) and (max-width: 1500px) {
-    .buttons{
+    .buttons {
         position: absolute;
         right: 0;
     }
