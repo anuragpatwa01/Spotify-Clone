@@ -47,9 +47,9 @@ async function getSongs(folder) {
             playMusic(songs[0]);
         }
         // Check if the screen width is small (mobile)
-        if (window.innerWidth <= 768) {
-            document.querySelector(".left").style.left = "0"; // Open the sidebar
-        }
+        // if (window.innerWidth <= 768) {
+        //     document.querySelector(".left").style.left = "0"; // Open the sidebar
+        // }
 
 
     }
@@ -87,12 +87,13 @@ const playMusic = (track, pause = false) => {
 };
 
 async function displayAlbums() {
-    
+
     let response = await fetch("/songs/songs.json");  // Load album data from JSON [new]
-    let albums = await response.json(); 
+    let albums = await response.json();
 
     let cardContainer = document.querySelector(".cardContainer")
     cardContainer.innerHTML = ""; // Clear previous albums  //[new]
+
 
 
     albums.forEach(album => {
