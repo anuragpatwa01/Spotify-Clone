@@ -107,6 +107,10 @@ async function displayAlbums() {
     document.querySelectorAll(".card").forEach(e => {
         e.addEventListener("click", async () => {
             await getSongs(e.dataset.folder);
+            if (window.innerWidth <= 768) {
+                document.querySelector(".left").style.left = "0";
+            }
+
         });
     });
 
